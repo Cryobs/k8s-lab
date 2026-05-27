@@ -1,0 +1,19 @@
+service:
+  type: ClusterIP
+
+persistence:
+  enabled: true
+  size: 3Gi
+  storageClass: "standard"
+
+env:
+  SIGNUPS_ALLOWED: "true"
+  ROCKET_PORT: "80"
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 256Mi
+  limits:
+    cpu: 400m
+    memory: 768Mi
