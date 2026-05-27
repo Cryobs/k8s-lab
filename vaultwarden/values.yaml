@@ -6,5 +6,6 @@ persistence:
   size: 3Gi
 
 env:
+  ADMIN_TOKEN: "SuperLongRandomToken1234567890ChangeMe2026!"
   SIGNUPS_ALLOWED: "true"
   DOMAIN: "http://vaultwarden.local"
